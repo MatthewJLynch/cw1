@@ -38,7 +38,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="/"><img class="img-logo" src="{{ url_for('static', filename='img/logo.png')}}"/></a>
+		<a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/logo.png')}}"/></a>
 	</div>
 	
 	<div id="navbar" class="collapse navbar-collapse">
@@ -54,13 +54,13 @@
   </div>
  </nav>
  
- <header>
+ <div class="img-responsive text-center">
   <img src="{{ url_for('static', filename='img/europe-map.jpg')}}" />
-    <div class="overlay">
+    <div class="overlay caption">
      <h1 class="title">Travel Europe</h1>
      <h2 class="sub-title">Discover European Cities with My Catalogue of Must See Cities!</h2>
 	</div>
- </header>
+ </div>
 
  {% endblock %}
 

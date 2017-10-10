@@ -5,51 +5,34 @@
 	padding-top: 50px;
 }
 
-.img-logo {
-	width: 15%;
-	height: 6%;
-}
-
 /*** Footer Styles **/
 
 
 /*** Header Styles **/
 
-figure { 
-  position: relative;
-  width: 100%;
-  height: auto;
-  
-  img { 
-    display: block; /* removes trailing whitespace */
-    outline: solid #000 1px;
-  } 
+.overlay{
+	position:absolute;
+	top:0;right:0;bottom:0;left:0;
+	background:rgba(0,0,0,0.25);
+	text-align:center;
+	color:#f5f7fa;
 }
 
-figcaption {
-  position: absolute;
-  bottom: 10%;
-  width: 501px; // constrain caption to img size
-  margin: 0;
+.title{
+	font-size:4.2em;
+}
 
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 200%;
-  text-transform: capitalize;
-  
-  span {
-    color: white;
-    background: black; /* fallback */
-    background: rgba(0, 0, 0, 0.7);
-    padding: .5em;
-    
-    &.spacer {
-      padding: 0 5px;
-      background: transparent;
-      
-      &::before { content: " "; }
-    }
-  }
+.sub-title{
+	font-size:1.6em;
+	margin-top:-20px;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
 
 /*** Table Styles **/
 

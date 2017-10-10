@@ -13,7 +13,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="/"><img class="img-logo" src="{{ url_for('static', filename='img/logo.png')}}"/></a>
+		<a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/logo.png')}}"/></a>
 	</div>
 	
 	<div id="navbar" class="collapse navbar-collapse">
@@ -28,19 +28,14 @@
 	</div>
   </div>
  </nav>
-
-  <figure>
-  <img src="{{ url_for('static', filename='img/berlin.jpg')}}" />
-  <figcaption>
-    <span>
-      Berlin
-      <span class='spacer'></span>
-      <br />
-      <span class='spacer'></span>
-      <h3>The City of Freedom</h3>
-    </span>
-  </figcaption>
-</figure>
+ 
+ <div class="img-responsive text-center">
+  <img src="{{ url_for('static', filename='img/europe-map.jpg')}}" />
+    <div class="overlay caption">
+     <h1 class="title">Travel Europe</h1>
+     <h2 class="sub-title">Discover European Cities with My Catalogue of Must See Cities!</h2>
+	</div>
+ </div>
 
 	<table class="table-fill">
 	  <thead>
