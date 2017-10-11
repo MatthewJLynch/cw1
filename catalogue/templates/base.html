@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	
+	{% if title %}
+    <title>{{ title }} | Wanderlust Catalogue</title>
+    {% else %}
+    <title>Welcome</title>
+    {% endif %}
+	
+	<meta name="description" content="Travel Catalogue">
+    <meta name="author" content="Matthew Lynch 40322639">
+	
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}"
+    rel="stylesheet"/>
+	<link href="{{ url_for('static', filename='css/stylesheet.css')}}"
+    rel="stylesheet"/>
+	<link href="{{ url_for('static', filename='favicon.ico') }}"
+	rel="shortcut icon"/>
+ </head>
+
+<body class="nav_padding">
+	<!-- content blocks that are placed within the templates that inherit from the base template -->
+    {% block content %}
+	
+<!-- Nav -->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed"
+		data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+		aria-controls="navbar">
+		
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/">Wanderlust</a>
+	</div>
+	
+	<div id="navbar" class="collapse navbar-collapse">
+	 <ul class="nav navbar-nav">
+		<li><a href="/london">London</a></li>
+		<li><a href="/berlin">Berlin</a></li>
+		<li><a href="/paris">Paris</a></li>
+		<li><a href="/rome">Rome</a></li>
+		<li><a href="/amsterdam">Amsterdam</a></li>
+		<li><a href="/prague">Prague</a></li>
+	 </ul>
+	</div>
+  </div>
+ </nav>
+ 
+ <!-- Content -->
+ 
+<div class= "container">
+	<div class="jumbotron">
+		<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Travel Europe</h1>
+		<p>Discover European Cities with My Catalogue of Must See Cities!</p>
+	</div>
+	
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="{{ url_for('static', filename='img/europe-map.jpg')}}">
+        </div>
+      </div>
+ 
+
+
+ {% endblock %}
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+ 
+ <div class="offset-md-6">
+	<div class="row">
+		<div class="footer-copyright">
+			&copy; 2017 SET09103 AWT
+		</div>
+	</div>
+ </div>
+ 
+</body>
+</html>
