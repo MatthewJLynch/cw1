@@ -1,0 +1,19 @@
+/*** Stylesheet | Wanderlust **/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/*Container*/
+
+.jumbotron {
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+
+/*** Footer Styles **/
+
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
