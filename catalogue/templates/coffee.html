@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block content %}
+	
+<!-- Nav -->
+	<div id="navbar" class="collapse navbar-collapse">
+	 <ul class="nav navbar-nav">
+		<li><a class="active" href="/home">Home</a></li>
+		<li><a class="active" href="/coffee">Coffee</a></li>
+		<li><a href="/about">About</a></li>
+	 </ul>
+	</div>
+  </div>
+ </nav>
+ 
+
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> Coffee </h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+	<h2> Choose Your Coffee </h2>
+	  <div class="categories-link"><a href="#">ESPRESSO</a></div>
+	  <div class="categories-link"><a href="#">AMERICANO</a></div>
+	  <div class="categories-link"><a href="#">CAPPUCCINO</a></div>
+	  <div class="categories-link"><a href="#">LATTE</a></div>
+	  <div class="categories-link"><a href="#">MOCHA</a></div>
+	  <div class="categories-link"><a href="#">MACCHIATO</a></div>
+  
+  
+  <!-- Menu -->
+  <div class="centered">
+
+    <section class="cards">
+
+      <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/caffè-latte.jpg')}}" alt="latte">
+          </figure>
+          <div class="card-content">
+            <h2>Caffè Latte</h2>
+            <p>A rich espresso is balanced with steamed milk and topped with a light layer of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+      <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+            <img src="http://placekitten.com/800/610" alt="flat-white">
+          </figure>
+          <div class="card-content">
+            <h2>Flat White</h2>
+            <p>Steamed milk poured over two shots of espresso</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+      <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/820/620" alt="mocha">
+          </figure>
+          <div class="card-content">
+            <h2>Caffè Mocha</h2>
+            <p>Espresso combined with mocha syrup and steamed milk, topped with whipped cream</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+      <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/810/610" alt="caramel-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Caramel Macchiato</h2>
+            <p>A mix of vanilla flavour and steamed milk marked with espresso, topped with foam and caramel sauce</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+      <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/808/608" alt="cappuccino">
+          </figure>
+          <div class="card-content">
+            <h2>Cappuccino</h2>
+            <p>Dark, rich espresso combined with steamed milk, topped with a deep layer of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/808/608" alt="espresso">
+          </figure>
+          <div class="card-content">
+            <h2>Espresso</h2>
+            <p>A shot of espresso with a rich flavour and caramel-like sweetness</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/808/608" alt="espresso-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Espresso Macchiato</h2>
+            <p>A caramelly-sweet shot of espresso marked with a small amount of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="http://placekitten.com/808/608" alt="cortado">
+          </figure>
+          <div class="card-content">
+            <h2>Cortado</h2>
+            <p>Two ristretto shots topped with warm, silky milk served in a 6oz cup that gives you the needed coffee kick for your day</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+    </section>
+    <!-- .cards -->
+
+  </div>
+  <!-- .centered -->
+  
+  </div>
+  
+ {% endblock %}

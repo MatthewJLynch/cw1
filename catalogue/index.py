@@ -4,12 +4,12 @@ app = Flask(__name__)
 #The Homepage Route
 @app.route("/")
 def index():
-  return render_template('base.html', title='Home')
+  return render_template('index.html', title='Home')
 
-#Berlin Page
-@app.route('/berlin')
-def berlin():
-  return render_template('berlin.html', title='Berlin', berlin=berlin)
+#Coffee Page
+@app.route('/coffee')
+def coffee():
+  return render_template('coffee.html', title='Coffee', coffee=coffee)
 
 #404 Page
 @app.errorhandler(404)
