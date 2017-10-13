@@ -1,18 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-	
-<!-- Nav -->
-	<div id="navbar" class="collapse navbar-collapse">
-	 <ul class="nav navbar-nav">
-		<li><a class="active" href="/home">Home</a></li>
-		<li><a class="active" href="/coffee">Coffee</a></li>
-		<li><a href="/about">About</a></li>
-	 </ul>
-	</div>
-  </div>
- </nav>
  
-
  <!-- Content -->
  <div id="wrapper">
  
@@ -25,14 +13,18 @@
   <div id="content">
   
 	<h2> Choose Your Coffee </h2>
-	  <div class="categories-link"><a href="#">ESPRESSO</a></div>
-	  <div class="categories-link"><a href="#">AMERICANO</a></div>
-	  <div class="categories-link"><a href="#">CAPPUCCINO</a></div>
-	  <div class="categories-link"><a href="#">LATTE</a></div>
-	  <div class="categories-link"><a href="#">MOCHA</a></div>
-	  <div class="categories-link"><a href="#">MACCHIATO</a></div>
-  
-  
+	   <div class="categories-link"><a href="#">ESPRESSO</a></div>
+	   <div class="categories-link"><a href="#">AMERICANO</a></div>
+	   <div class="categories-link"><a href="#">CAPPUCCINO</a></div>
+	   <div class="categories-link"><a href="#">LATTE</a></div>
+	   <div class="categories-link"><a href="#">MOCHA</a></div>
+	   <div class="categories-link"><a href="#">MACCHIATO</a></div>
+	 </br></br>
+	   <div class="categories-link"><a href="#">TEAS</a></div>
+	   <div class="categories-link"><a href="#">UNDER 200 CALORIES</a></div>
+	   <div class="categories-link"><a href="#">SEASONAL</a></div>
+	 </br></br>
+
   <!-- Menu -->
   <div class="centered">
 
@@ -41,7 +33,7 @@
       <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="{{ url_for('static', filename='img/caffè-latte.jpg')}}" alt="latte">
+          <img src="{{ url_for('static', filename='img/caffe-latte.jpg')}}" alt="latte">
           </figure>
           <div class="card-content">
             <h2>Caffè Latte</h2>
@@ -55,7 +47,7 @@
       <article class="card">
         <a href="#">
           <figure class="thumbnail">
-            <img src="http://placekitten.com/800/610" alt="flat-white">
+            <img src="{{ url_for('static', filename='img/flat-white.jpg')}}" alt="flat-white">
           </figure>
           <div class="card-content">
             <h2>Flat White</h2>
@@ -69,11 +61,11 @@
       <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/820/620" alt="mocha">
+          <img src="{{ url_for('static', filename='img/americano.jpg')}}" alt="americano">
           </figure>
           <div class="card-content">
-            <h2>Caffè Mocha</h2>
-            <p>Espresso combined with mocha syrup and steamed milk, topped with whipped cream</p>
+            <h2>Americano</h2>
+            <p>Espresso shots are topped with hot water to produce a light layer of crema. The result is this wonderfully rich cup with depth and nuance</p>
           </div>
           <!-- .card-content -->
         </a>
@@ -83,7 +75,7 @@
       <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/810/610" alt="caramel-macchiato">
+          <img src="{{ url_for('static', filename='img/caramel-macchiato.jpg')}}" alt="caramel-macchiato">
           </figure>
           <div class="card-content">
             <h2>Caramel Macchiato</h2>
@@ -97,7 +89,7 @@
       <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/808/608" alt="cappuccino">
+          <img src="{{ url_for('static', filename='img/cappuccino.jpg')}}" alt="cappuccino">
           </figure>
           <div class="card-content">
             <h2>Cappuccino</h2>
@@ -111,7 +103,7 @@
 	        <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/808/608" alt="espresso">
+          <img src="{{ url_for('static', filename='img/espresso.jpg')}}" alt="espresso">
           </figure>
           <div class="card-content">
             <h2>Espresso</h2>
@@ -125,7 +117,7 @@
 	        <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/808/608" alt="espresso-macchiato">
+          <img src="{{ url_for('static', filename='img/espresso_macchiato.jpg')}}" alt="espresso-macchiato">
           </figure>
           <div class="card-content">
             <h2>Espresso Macchiato</h2>
@@ -139,11 +131,67 @@
 	        <article class="card">
         <a href="#">
           <figure class="thumbnail">
-          <img src="http://placekitten.com/808/608" alt="cortado">
+          <img src="{{ url_for('static', filename='img/cortado-coffee.jpg')}}" alt="cortado">
           </figure>
           <div class="card-content">
             <h2>Cortado</h2>
             <p>Two ristretto shots topped with warm, silky milk served in a 6oz cup that gives you the needed coffee kick for your day</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/pumpkin-latte.jpg')}}" alt="pumpkin-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Pumpkin Spice Latte</h2>
+            <p>Warm up with this spiced pumpkin latte recipe, perfect for Hallowe’en</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/gingerbread-latte.jpg')}}" alt="gingerbread-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Gingerbread Latte</h2>
+            <p>Espresso, infused with gingerbread syrup and creamy steamed milk, finished with gingerbread flavoured whipped cream and wafer crumbs</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/earl-grey.jpg')}}" alt="earl-grey">
+          </figure>
+          <div class="card-content">
+            <h2>Earl Grey Tea</h2>
+            <p>A bright blend of black tea, fragrant bergamot and soft lavender.</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  	        <article class="card">
+        <a href="#">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/english-breakfast.jpg')}}" alt="english-breakfast">
+          </figure>
+          <div class="card-content">
+            <h2>English Breakfast Tea</h2>
+            <p>Full-bodied black tea with rich, malty undertones.</p>
           </div>
           <!-- .card-content -->
         </a>
