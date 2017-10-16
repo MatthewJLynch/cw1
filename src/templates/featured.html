@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> Featured </h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  <!-- Featured Text -->
+  <h2>Our Featured Drinks</h2>
+   <h4>We love the relaxing sip of tea and coffee as much as you, so we what to share our favorites for this mouth!</h4>
+  
+  <div class="centered">
+    
+	<!-- Card 1 -->
+    <section class="cards">
+	  
+	  <article class="card">
+        <a href="/drinks/breakfast-tea">
+          <figure>
+          <img src="{{ url_for('static', filename='img/english-breakfast.jpg')}}" alt="english-breakfast">
+          </figure>
+          <div class="card-content">
+            <h2>English Breakfast Tea</h2>
+            <p>Full-bodied black tea with rich, malty undertones</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 2 -->
+	  <article class="card">
+        <a href="/drinks/pumpkin-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/pumpkin-latte.jpg')}}" alt="pumpkin-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Pumpkin Spice Latte</h2>
+            <p>Warm up with this spiced pumpkin latte recipe, perfect for Halloween</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 3 -->
+	  <article class="card">
+        <a href="/drinks/cortado">
+          <figure>
+          <img src="{{ url_for('static', filename='img/cortado-coffee.jpg')}}" alt="cortado">
+          </figure>
+          <div class="card-content">
+            <h2>Cortado</h2>
+            <p>Two ristretto shots topped with warm, silky milk served in a 6oz cup that gives you the needed coffee kick for your day</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

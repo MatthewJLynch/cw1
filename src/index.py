@@ -1,5 +1,5 @@
 import os
-from flask import Flask, url_for, render_template, json
+from flask import Flask, url_for, render_template, json, redirect
 app = Flask(__name__)
 
 #The Homepage Route
@@ -7,31 +7,43 @@ app = Flask(__name__)
 def index():
   return render_template('index.html', title='Home')
 
-#Coffee Page
-@app.route('/coffee')
-def coffee():
-  return render_template('coffee.html', title='Coffee', coffee=coffee)
+#Featured Page
+@app.route('/featured')
+def featured():
+  return render_template('featured.html', title='Featured Drinks', featured=featured)
+  
+#Drinks Page
+@app.route('/drinks')
+def drinks():
+  return render_template('drinks.html', title='Drinks', drinks=drinks)
+
+#About Page
+@app.route('/about')
+def about():
+  return render_template('about.html', title='About', about=about)
+
 
 #Catalogue Pages
 #Tea Catalogue Page
-@app.route('/coffee/tea')
+@app.route('/drinks/tea')
 def tea_catalogue():
   return render_template('tea-catalogue.html', title='Tea', tea_catalogue=tea_catalogue)
 
 #Under 200 Cal Catalogue Page
-@app.route('/coffee/under200cal')
+@app.route('/drinks/under200cal')
 def under200cal_catalogue():
   return render_template('under200cal-catalogue.html', title='Under 200 Cal', under200cal_catalogue=under200cal_catalogue)
  
 #Seasonal Catalogue Page
-@app.route('/coffee/seasonal')
+@app.route('/drinks/seasonal')
 def seasonal_catalogue():
   return render_template('seasonal-catalogue.html', title='Seasonal', seasonal_catalogue=seasonal_catalogue)
 
+
 #Coffee Pages
 #Americano Page
-@app.route('/coffee/americano')
-@app.route('/under200cal/americano')
+@app.route('/drinks/americano')
+@app.route('/drinks/under200cal/americano')
 def americano():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -39,8 +51,8 @@ def americano():
   return render_template('americano.html', title='Americano', americano=americano)
   
 #Caffe Latte Page
-@app.route('/coffee/caffe-latte')
-@app.route('/under200cal/caffe-latte')
+@app.route('/drinks/caffe-latte')
+@app.route('/drinks/under200cal/caffe-latte')
 def caffe_latte():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -48,8 +60,8 @@ def caffe_latte():
   return render_template('caffe-latte.html', title='Caffe Latte', caffe_latte=caffe_latte)
   
 #Cappuccino Page
-@app.route('/coffee/cappuccino')
-@app.route('/under200cal/cappuccino')
+@app.route('/drinks/cappuccino')
+@app.route('/drinks/under200cal/cappuccino')
 def cappuccino():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -57,7 +69,7 @@ def cappuccino():
   return render_template('cappuccino.html', title='Cappuccino', cappuccino=cappuccino)
 
 #Caramel Macchiato Page
-@app.route('/coffee/caramel-macchiato')
+@app.route('/drinks/caramel-macchiato')
 def caramel_macchiato():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -65,8 +77,8 @@ def caramel_macchiato():
   return render_template('caramel-macchiato.html', title='Caramel Macchiato', caramel_macchiato=caramel_macchiato)
 
 #Cortado Page
-@app.route('/coffee/cortado')
-@app.route('/under200cal/cortado')
+@app.route('/drinks/cortado')
+@app.route('/drinks/under200cal/cortado')
 def cortado():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -74,8 +86,8 @@ def cortado():
   return render_template('cortado.html', title='Cortado', cortado=cortado)
   
 #Espresso Page
-@app.route('/coffee/espresso')
-@app.route('/under200cal/espresso')
+@app.route('/drinks/espresso')
+@app.route('/drinks/under200cal/espresso')
 def espresso():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -83,8 +95,8 @@ def espresso():
   return render_template('espresso.html', title='Espresso', espresso=espresso)
   
 #Espresso Macchiato Page
-@app.route('/coffee/espresso-macchiato')
-@app.route('/under200cal/espresso-macchiato')
+@app.route('/drinks/espresso-macchiato')
+@app.route('/drinks/under200cal/espresso-macchiato')
 def espresso_macchiato():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -92,7 +104,7 @@ def espresso_macchiato():
   return render_template('espresso-macchiato.html', title='Espresso Macchiato', espresso_macchiato=espresso_macchiato)
   
 #Flat White Page
-@app.route('/coffee/flat-white')
+@app.route('/drinks/flat-white')
 def flat_white():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -100,8 +112,8 @@ def flat_white():
   return render_template('flat-white.html', title='Flat White', flat_white=flat_white)
   
 #Gingerbread Latte Page
-@app.route('/coffee/gingerbread-latte')
-@app.route('/seasonal/gingerbread-latte')
+@app.route('/drinks/gingerbread-latte')
+@app.route('/drinks/seasonal/gingerbread-latte')
 def gingerbread_latte():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -109,8 +121,8 @@ def gingerbread_latte():
   return render_template('gingerbread-latte.html', title='Gingerbread Latte', gingerbread_latte=gingerbread_latte)
   
 #Pumpkin Latte Page
-@app.route('/coffee/pumpkin-latte')
-@app.route('/seasonal/pumpkin-latte')
+@app.route('/drinks/pumpkin-latte')
+@app.route('/drinks/seasonal/pumpkin-latte')
 def pumpkin_latte():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -118,9 +130,9 @@ def pumpkin_latte():
   return render_template('pumpkin-latte.html', title='Pumpkin Latte', pumpkin_latte=pumpkin_latte)
   
 #Earl Grey Page
-@app.route('/coffee/earl-grey')
-@app.route('/tea/earl-grey')
-@app.route('/under200cal/earl-grey')
+@app.route('/drinks/earl-grey')
+@app.route('/drinks/tea/earl-grey')
+@app.route('/drinks/under200cal/earl-grey')
 def earl_grey():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -128,9 +140,9 @@ def earl_grey():
   return render_template('earl-grey.html', title='Earl Grey', earl_grey=earl_grey)
   
 #English Breakfast Tea Page
-@app.route('/coffee/breakfast-tea')
-@app.route('/tea/breakfast-tea')
-@app.route('/under200cal/breakfast-tea')
+@app.route('/drinks/breakfast-tea')
+@app.route('/drinks/tea/breakfast-tea')
+@app.route('/drinks/under200cal/breakfast-tea')
 def breakfast_tea():
   SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
   json_url = os.path.join(SITE_ROOT, "static/js/", "coffee-information.json")
@@ -142,6 +154,7 @@ def breakfast_tea():
 @app.errorhandler(404)
 def page_not_found(error):
   return render_template('404.html', title='Error'), 404
+  return
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)

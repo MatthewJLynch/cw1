@@ -6,20 +6,33 @@
  
   <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
     <div class="header text-shadow">
-      <h1>Under 200 Calories</h1>
+      <h1> Coffee Drinks </h1>
     </div>
   </div>
   
   <div id="content">
   
-  <!-- Card View -->
+  	<!-- Categories -->
+	<h2> Choose Your Coffee </h2>
+	   <div class="categories-link"><a href="/drinks/espresso-catalogue">ESPRESSO</a></div>
+	   <div class="categories-link"><a href="/drinks/americano-catalogue">AMERICANO</a></div>
+	   <div class="categories-link"><a href="/drinks/cappuccion-catalogue">CAPPUCCINO</a></div>
+	   <div class="categories-link"><a href="/drinks/latte-catalogue">LATTE</a></div>
+	   <div class="categories-link"><a href="/drinks/mocha-catalogue">MOCHA</a></div>
+	   <div class="categories-link"><a href="/drinks/macchiato-catalogue">MACCHIATO</a></div>
+	 </br></br>
+	   <div class="categories-link"><a href="/drinks/tea">TEAS</a></div>
+	   <div class="categories-link"><a href="/drinks/under200cal">UNDER 200 CALORIES</a></div>
+	   <div class="categories-link"><a href="/drinks/seasonal">SEASONAL</a></div>
+	 </br></br>
+
   <div class="centered">
 
     <section class="cards">
-	
-	<!-- Card 1 -->
-	 <article class="card">
-        <a href="/drinks/under200cal/caffe-latte">
+	  
+	  <!-- Card 1 -->
+      <article class="card">
+        <a href="/drinks/caffe-latte">
           <figure>
           <img src="{{ url_for('static', filename='img/caffe-latte.jpg')}}" alt="latte">
           </figure>
@@ -31,8 +44,21 @@
       </article>
 	  
 	  <!-- Card 2 -->
-	  <article class="card">
-        <a href="/drinks/under200cal/americano">
+      <article class="card">
+        <a href="/drinks/flat-white">
+          <figure>
+            <img src="{{ url_for('static', filename='img/flat-white.jpg')}}" alt="flat-white">
+          </figure>
+          <div class="card-content">
+            <h2>Flat White</h2>
+            <p>Steamed milk poured over two shots of espresso</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 3 -->
+      <article class="card">
+        <a href="/drinks/americano">
           <figure>
           <img src="{{ url_for('static', filename='img/americano.jpg')}}" alt="americano">
           </figure>
@@ -42,10 +68,23 @@
           </div>
         </a>
       </article>
-	  
-	  <!-- Card 3 -->
-	  <article class="card">
-        <a href="/drinks/under200cal/cappuccino">
+
+	  <!-- Card 4 -->
+      <article class="card">
+        <a href="/drinks/caramel-macchiato">
+          <figure>
+          <img src="{{ url_for('static', filename='img/caramel-macchiato.jpg')}}" alt="caramel-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Caramel Macchiato</h2>
+            <p>A mix of vanilla flavour and steamed milk marked with espresso, topped with foam and caramel sauce</p>
+          </div>
+        </a>
+      </article>
+
+	  <!-- Card 5 -->
+      <article class="card">
+        <a href="/drinks/cappuccino">
           <figure>
           <img src="{{ url_for('static', filename='img/cappuccino.jpg')}}" alt="cappuccino">
           </figure>
@@ -55,10 +94,11 @@
           </div>
         </a>
       </article>
+      <!-- .card -->
 	  
-	  <!-- Card 4 -->
+	  <!-- Card 6 -->
 	  <article class="card">
-        <a href="/drinks/under200cal/espresso">
+        <a href="/drinks/espresso">
           <figure>
           <img src="{{ url_for('static', filename='img/espresso.jpg')}}" alt="espresso">
           </figure>
@@ -69,9 +109,9 @@
         </a>
       </article>
 	  
-	  <!-- Card 5 -->
+	  <!-- Card 7 -->
 	  <article class="card">
-        <a href="/drinks/under200cal/espresso-macchiato">
+        <a href="/drinks/espresso-macchiato">
           <figure>
           <img src="{{ url_for('static', filename='img/espresso_macchiato.jpg')}}" alt="espresso-macchiato">
           </figure>
@@ -82,9 +122,9 @@
         </a>
       </article>
 	  
-	  <!-- Card 6 -->
+	  <!-- Card 8 -->
 	  <article class="card">
-        <a href="/drinks/under200cal/cortado">
+        <a href="/drinks/cortado">
           <figure>
           <img src="{{ url_for('static', filename='img/cortado-coffee.jpg')}}" alt="cortado">
           </figure>
@@ -95,9 +135,35 @@
         </a>
       </article>
 	  
-	  <!-- Card 7 -->
+	  <!-- Card 9 -->
 	  <article class="card">
-        <a href="/drinks/under200cal/earl-grey">
+        <a href="/drinks/pumpkin-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/pumpkin-latte.jpg')}}" alt="pumpkin-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Pumpkin Spice Latte</h2>
+            <p>Warm up with this spiced pumpkin latte recipe, perfect for Halloween</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 10 -->
+	  <article class="card">
+        <a href="/drinks/gingerbread-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/gingerbread-latte.jpg')}}" alt="gingerbread-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Gingerbread Latte</h2>
+            <p>Espresso, infused with gingerbread syrup and creamy steamed milk, finished with gingerbread flavoured whipped cream and wafer crumbs</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 11 -->
+	  <article class="card">
+        <a href="/drinks/earl-grey">
           <figure>
           <img src="{{ url_for('static', filename='img/earl-grey.jpg')}}" alt="earl-grey">
           </figure>
@@ -108,9 +174,9 @@
         </a>
       </article>
 	  
-	  <!-- Card 8 -->
+	  <!-- Card 12 -->
 	  <article class="card">
-        <a href="/drinks/under200cal/breakfast-tea">
+        <a href="/drinks/breakfast-tea">
           <figure>
           <img src="{{ url_for('static', filename='img/english-breakfast.jpg')}}" alt="english-breakfast">
           </figure>
