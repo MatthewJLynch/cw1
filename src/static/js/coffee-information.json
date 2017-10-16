@@ -1,0 +1,44 @@
+{
+    "name": [
+		"Americano",
+		"Caffè Latte",
+		"Cappuccino",
+		"Caramel Macchiato",
+		"Cortado",
+		"Espresso",
+		"Espresso Macchiato",
+		"Flat White",
+		"Gingerbread Latte",
+		"Pumpkin Latte",
+		"Earl Grey tea",
+		"English Breakfast Tea"
+    ],
+    "description": [
+		"Americano is a style of coffee prepared by brewing espresso with added hot water, giving it a similar strength to, but different flavor from drip coffee. The strength of an Americano varies with the number of shots of espresso and the amount of water added.",
+		"Caffè latte is a coffee-based drink made primarily from espresso and steamed milk. It consists of one-third espresso, two-thirds heated milk and about 1cm of foam.",
+		"A cappuccino is an Italian coffee drink that is traditionally prepared with double espresso, and steamed milk foam.",
+		"Latte macchiato is a coffee beverage; the name literally means stained milk. This refers to the method of preparation, wherein the milk is stained by the addition of espresso.",
+		"A cortado is a Spanish-origin general term for a beverage consisting of either coffee or espresso mixed with a roughly equal amount of warm milk to reduce the acidity.",
+		"Espresso is coffee brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans.",
+		"Espresso macchiato, sometimes called espresso macchiato, is an espresso coffee drink with a small amount of milk, usually foamed.",
+		"A flat white is an espresso-based coffee drink. It is prepared by pouring microfoam into a single or double shot of espresso.",
+		"A gingerbread Latte uses gingerbread spices to brings the warm flavors of ginger, cinnamon, allspice and nutmeg, while pure vanilla extract, brown sugar and molasses add the sweetness then mixed with milk, coffee",
+		"The Pumpkin Spice Latte is a coffee drink made with a mix of traditional fall spice flavors, steamed milk, and espresso, topped with whipped cream and pumpkin pie spice. Since 2015, it has also contained a small amount of pumpkin puree.",
+		"Earl Grey tea is typically a black tea base, flavored with oil from the rind of bergamot orange, a citrus fruit with the appearance and flavor somewhere between an orange and a lemon with a little grapefruit and lime thrown in.",
+		"English breakfast tea is a traditional blend of teas originating from Assam, Ceylon, and Kenya. It is one of the most popular blended teas."
+    ],
+    "calories": [
+		"15",
+		"190",
+		"120",
+		"250",
+		"42",
+		"10",
+		"12",
+		"220",
+		"330",
+		"380",
+		"4",
+		"18"
+    ]
+}

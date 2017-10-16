@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> TEAS </h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Menu -->
+  <div class="centered">
+
+    <section class="cards">
+	  
+	  	        <article class="card">
+        <a href="/tea/earl-grey">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/earl-grey.jpg')}}" alt="earl-grey">
+          </figure>
+          <div class="card-content">
+            <h2>Earl Grey Tea</h2>
+            <p>A bright blend of black tea, fragrant bergamot and soft lavender.</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  	        <article class="card">
+        <a href="/tea/breakfast-tea">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/english-breakfast.jpg')}}" alt="english-breakfast">
+          </figure>
+          <div class="card-content">
+            <h2>English Breakfast Tea</h2>
+            <p>Full-bodied black tea with rich, malty undertones.</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+    </section>
+    <!-- .cards -->
+
+  </div>
+  <!-- .centered -->
+  
+  </div>
+  
+ {% endblock %}

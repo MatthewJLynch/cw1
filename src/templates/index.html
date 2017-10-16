@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-home" style="background-image: url( {{url_for('static', filename='img/coffee-background.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> Coffee Lovers </h1>
+    </div>
+  </div>
+  
+  <div id="content">
+    <h2>Our Passion</h2>
+    <p>We Source, roast and blend the finest bespoke teas and coffees in our drinks, this is for the signature flavors for our customers.</p>
+  </div>
+  
+ {% endblock %}

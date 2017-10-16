@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Under 200 Calories</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Menu -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	 <article class="card">
+        <a href="/under200cal/caffe-latte">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/caffe-latte.jpg')}}" alt="latte">
+          </figure>
+          <div class="card-content">
+            <h2>Caffè Latte</h2>
+            <p>A rich espresso is balanced with steamed milk and topped with a light layer of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/americano">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/americano.jpg')}}" alt="americano">
+          </figure>
+          <div class="card-content">
+            <h2>Americano</h2>
+            <p>Espresso shots are topped with hot water to produce a light layer of crema. The result is this wonderfully rich cup with depth and nuance</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/cappuccino">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/cappuccino.jpg')}}" alt="cappuccino">
+          </figure>
+          <div class="card-content">
+            <h2>Cappuccino</h2>
+            <p>Dark, rich espresso combined with steamed milk, topped with a deep layer of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/espresso">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/espresso.jpg')}}" alt="espresso">
+          </figure>
+          <div class="card-content">
+            <h2>Espresso</h2>
+            <p>A shot of espresso with a rich flavour and caramel-like sweetness</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/espresso-macchiato">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/espresso_macchiato.jpg')}}" alt="espresso-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Espresso Macchiato</h2>
+            <p>A caramelly-sweet shot of espresso marked with a small amount of foam</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/cortado">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/cortado-coffee.jpg')}}" alt="cortado">
+          </figure>
+          <div class="card-content">
+            <h2>Cortado</h2>
+            <p>Two ristretto shots topped with warm, silky milk served in a 6oz cup that gives you the needed coffee kick for your day</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/earl-grey">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/earl-grey.jpg')}}" alt="earl-grey">
+          </figure>
+          <div class="card-content">
+            <h2>Earl Grey Tea</h2>
+            <p>A bright blend of black tea, fragrant bergamot and soft lavender.</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/under200cal/breakfast-tea">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/english-breakfast.jpg')}}" alt="english-breakfast">
+          </figure>
+          <div class="card-content">
+            <h2>English Breakfast Tea</h2>
+            <p>Full-bodied black tea with rich, malty undertones.</p>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+    </section>
+    <!-- .cards -->
+
+  </div>
+  <!-- .centered -->
+  
+  </div>
+  
+ {% endblock %}

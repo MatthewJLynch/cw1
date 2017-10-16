@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-left" style="background-image: url( {{url_for('static', filename='img/gingerbread-latte.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>{{ gingerbread_latte.name[8] }}</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+     <div class="description">
+	 <p>{{ gingerbread_latte.description[8] }}</p>
+	 </div>
+	 </br></br>
+	 <div class="calories">
+	 <p>{{ gingerbread_latte.calories[8] }} Calories</p>
+	 </div>
+  </div>
+  
+ {% endblock %}

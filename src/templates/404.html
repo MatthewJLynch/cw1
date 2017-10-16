@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero" style="background-image: url( {{url_for('static', filename='img/error-page.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> 404 </h1>
+	  <h2> Sorry Something Went Wrong :( </h2>
+    </div>
+  </div>
+  
+ {% endblock %}

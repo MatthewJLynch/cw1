@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-left" style="background-image: url( {{url_for('static', filename='img/caramel-macchiato.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>{{ caramel_macchiato.name[3] }}</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+     <div class="description">
+	 <p>{{ caramel_macchiato.description[3] }}</p>
+	 </div>
+	 </br></br>
+	 <div class="calories">
+	 <p>{{ caramel_macchiato.calories[3] }} Calories</p>
+	 </div>
+  </div>
+  
+ {% endblock %}

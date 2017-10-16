@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Seasonal</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Menu -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	 <article class="card">
+        <a href="/seasonal/pumpkin-latte">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/halloween-season.jpg')}}" alt="halloween-season">
+          </figure>
+          <div class="card-content">
+            <h2>Halloween</h2>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+	  
+	  <article class="card">
+        <a href="/seasonal/gingerbread-latte">
+          <figure class="thumbnail">
+          <img src="{{ url_for('static', filename='img/christmas-season.jpg')}}" alt="christmas-season">
+          </figure>
+          <div class="card-content">
+            <h2>Christmas</h2>
+          </div>
+          <!-- .card-content -->
+        </a>
+      </article>
+      <!-- .card -->
+
+    </section>
+    <!-- .cards -->
+
+  </div>
+  <!-- .centered -->
+  
+  </div>
+  
+ {% endblock %}
