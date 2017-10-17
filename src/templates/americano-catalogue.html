@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Americano Drinks</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	<!-- Card 1 -->
+      <article class="card">
+        <a href="/drinks/americano-catalogue/americano">
+          <figure>
+          <img src="{{ url_for('static', filename='img/americano.jpg')}}" alt="americano">
+          </figure>
+          <div class="card-content">
+            <h2>Americano</h2>
+            <p>Espresso shots are topped with hot water to produce a light layer of crema. The result is this wonderfully rich cup with depth and nuance</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

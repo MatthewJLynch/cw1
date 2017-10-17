@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1> About Us </h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  <h2>Our Coffee House</h2>
+  <h4>We have always aimed to make our coffee shop the best coffee shop in Huddersfield. We do this by making sure our food and drink taste amazing and also by creating an atmosphere where people can enjoy themselves whether they're socialising or working. Our staff are always ready to serve with a smile and make you feel welcome - after all; everything we do is aimed to make you as our customer feel welcome.</h4>
+  </br></br>
+  <h2>Our Coffee</h2>
+  <h4>Our beans are the perfect balance of aroma and strength - 100% arabica and full of flavour. We believe our products should be of a higher standard compared to the rest of the market. That’s why we don’t scrimp when it comes to the quality of our beans. If you don’t believe us you’ll have to come down and try for yourself! A coffee that is.. not a bean. Unless you really want to.</h4>
+  </br></br>
+  <h2>We're Open</h2>
+  <h4>9am - 8pm Everyday</h4>
+  </div>
+  
+ {% endblock %}

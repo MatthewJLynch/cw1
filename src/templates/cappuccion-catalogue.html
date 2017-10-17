@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Cappuccion Drinks</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	<!-- Card 1 -->
+      <article class="card">
+        <a href="/drinks/cappuccion-catalogue/cappuccino">
+          <figure>
+          <img src="{{ url_for('static', filename='img/cappuccino.jpg')}}" alt="cappuccino">
+          </figure>
+          <div class="card-content">
+            <h2>Cappuccino</h2>
+            <p>Dark, rich espresso combined with steamed milk, topped with a deep layer of foam</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

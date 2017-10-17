@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Macchiato Drinks</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	<!-- Card 1 -->
+	  <article class="card">
+        <a href="/drinks/macchiato-catalogue/espresso-macchiato">
+          <figure>
+          <img src="{{ url_for('static', filename='img/espresso_macchiato.jpg')}}" alt="espresso-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Espresso Macchiato</h2>
+            <p>A caramelly-sweet shot of espresso marked with a small amount of foam</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 2 -->
+	  <article class="card">
+        <a href="/drinks/macchiato-catalogue/caramel-macchiato">
+          <figure>
+          <img src="{{ url_for('static', filename='img/caramel-macchiato.jpg')}}" alt="caramel-macchiato">
+          </figure>
+          <div class="card-content">
+            <h2>Caramel Macchiato</h2>
+            <p>A mix of vanilla flavour and steamed milk marked with espresso, topped with foam and caramel sauce</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

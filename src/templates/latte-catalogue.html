@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/coffee-beans.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Latte Drinks</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	<!-- Card 1 -->
+      <article class="card">
+        <a href="/drinks/latte-catalogue/caffe-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/caffe-latte.jpg')}}" alt="latte">
+          </figure>
+          <div class="card-content">
+            <h2>Caffè Latte</h2>
+            <p>A rich espresso is balanced with steamed milk and topped with a light layer of foam</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 2 -->
+	  <article class="card">
+        <a href="/drinks/latte-catalogue/gingerbread-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/gingerbread-latte.jpg')}}" alt="gingerbread-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Gingerbread Latte</h2>
+            <p>Espresso, infused with gingerbread syrup and creamy steamed milk, finished with gingerbread flavoured whipped cream and wafer crumbs</p>
+          </div>
+        </a>
+      </article>
+	  
+	  <!-- Card 3 -->
+	  <article class="card">
+        <a href="/drinks/latte-catalogue/pumpkin-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/pumpkin-latte.jpg')}}" alt="pumpkin-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Pumpkin Spice Latte</h2>
+            <p>Warm up with this spiced pumpkin latte recipe, perfect for Halloween</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}
