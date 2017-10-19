@@ -1,5 +1,5 @@
 import os
-from flask import Flask, url_for, render_template, json, redirect
+from flask import Flask, url_for, render_template, json, redirect, request
 app = Flask(__name__)
 
 #The Homepage Route
@@ -184,12 +184,13 @@ def breakfast_tea():
   breakfast_tea = json.load(open(json_url))
   return render_template('breakfast-tea.html', title='Breakfast Tea', breakfast_tea=breakfast_tea)
   
-
 #404 Page
 @app.errorhandler(404)
 def page_not_found(error):
-  return render_template('404.html', title='Error'), 404
-  return
+  return render_template('404.html', title='Error'), 404,
+  #Rediret
+  return redirect(url_for('index'))
+
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
