@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/christmas-season.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Christmas Season</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	  <!-- Card 1 -->
+	  <article class="card">
+        <a href="/drinks/seasonal/christmas/gingerbread-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/gingerbread-latte.jpg')}}" alt="gingerbread-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Gingerbread Latte</h2>
+            <p>Espresso, infused with gingerbread syrup and creamy steamed milk, finished with gingerbread flavoured whipped cream and wafer crumbs</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

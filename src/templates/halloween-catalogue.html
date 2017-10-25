@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ <!-- Content -->
+ <div id="wrapper">
+ 
+  <div id="hero-page" style="background-image: url( {{url_for('static', filename='img/halloween-season.jpg') }} )">
+    <div class="header text-shadow">
+      <h1>Halloween Season</h1>
+    </div>
+  </div>
+  
+  <div id="content">
+  
+  <!-- Card View -->
+  <div class="centered">
+
+    <section class="cards">
+	
+	  <!-- Card 1 -->
+	  <article class="card">
+        <a href="/drinks/seasonal/halloween/pumpkin-latte">
+          <figure>
+          <img src="{{ url_for('static', filename='img/pumpkin-latte.jpg')}}" alt="pumpkin-latte">
+          </figure>
+          <div class="card-content">
+            <h2>Pumpkin Spice Latte</h2>
+            <p>Warm up with this spiced pumpkin latte recipe, perfect for Halloween</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </div>
+  
+  </div>
+  
+ {% endblock %}

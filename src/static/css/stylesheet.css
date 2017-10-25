@@ -24,7 +24,7 @@ body {
 .navbar {
 	font-size: 16px;
 	padding: 24px;
-	background-color: #ddd;
+	background-color: rgba(221,221,221, 0.97);
 }
 
 .navbar-toggle .icon-bar {
